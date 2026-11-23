@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; margin: 0; color: #1c2430; background: #f3f5f8; }
+header { background: #fff; border-bottom: 1px solid #e3e7ec; padding: 12px 20px; }
+h1 { font-size: 18px; margin: 0 0 8px; }
+#tabs { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.tab { background: #e9edf2; border: 0; padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 14px; }
+.tab.active { background: #2f6ad6; color: #fff; }
+#stats { color: #6b7685; font-size: 13px; margin-left: 8px; }
+main { padding: 20px; max-width: 1100px; margin: 0 auto; }
+section h2 { font-size: 16px; margin: 0 0 8px; }
+table { border-collapse: collapse; background: #fff; width: 100%; margin-top: 12px; font-size: 14px; }
+th, td { border: 1px solid #e3e7ec; padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #f7f9fb; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; }
+td button.del { border: 1px solid #e3e7ec; background: #fff; border-radius: 6px; padding: 4px 8px; cursor: pointer; }
+.row { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+.row input, .row select, .row button { padding: 8px 10px; border: 1px solid #c7ced7; border-radius: 8px; background: #fff; font-size: 14px; }
+.row button { border: 0; background: #2f6ad6; color: #fff; cursor: pointer; }
+.loading { color: #6b7685; padding: 20px; }
