@@ -13,17 +13,17 @@ async function api(method, url, body) {
 }
 
 const del = (url) => `<button class="del" data-url="${url}">✕</button>`;
-const rows = (list, fn) => list.map(fn).join(');
+const rows = (list, fn) => list.map(fn).join('');
 
 function addForm(action, fields) {
   const html = fields.map((f) => {
     const value = f.value ? ` value="${f.value}"` : '';
     if (f.select) {
-      const opts = f.select.map((o) => `<option value="${o}">${o}</option>`).join(');
+      const opts = f.select.map((o) => `<option value="${o}">${o}</option>`).join('');
       return `<select name="${f.name}"${value}${f.required ? ' required' : ''}>${opts}</select>`;
     }
     return `<input name="${f.name}" placeholder="${f.label}"${value}${f.required ? ' required' : ''}>`;
-  }).join();
+  }).join('');
   return `<form data-action="${action}" class="row">${html}<button>Ajouter</button></form>`;
 }
 
